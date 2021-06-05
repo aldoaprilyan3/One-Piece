@@ -28,10 +28,11 @@ async def help(event):
         for i in CMD_HELP:
             string += "`" + str(i)
             string += "`\t➢  "
-        await event.edit("**╔═════☠️ ONE PIECE ☠️══════╗**\n\n"
-                         "**• Mᴀɪɴ Mᴇɴᴜ :**\n"
+        await event.edit("**╔═════☠️ ᴏɴᴇ ᴘɪᴇᴄᴇ ☠️══════╗**\n\n"
+                         "**• ᴍᴀɪɴ ᴍᴇɴᴜ **\n"
+                         "**• ᴅᴀꜰᴛᴀʀ ᴍᴏᴅᴜʟᴇ :**\n"
                          f"{string}"
-                         "\n╚═══THANKS ALDO GNTENG ⚡️════╝")
+                         "\n╚════ ⚠️ ᴀʟᴅᴏ ɢɴᴛᴇɴɢ ⚠️════╝")
         await event.reply(f"\nCara Menggunakan Contoh: Ketik `.help afk` Untuk Informasi Modules")
         await asyncio.sleep(1000)
         await event.delete()
