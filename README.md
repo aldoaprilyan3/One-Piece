@@ -30,9 +30,6 @@
 <h3 align="center">Userbot Yang Digunakan Untuk Bersenang-Senang Di Telegram</h3>
 <p align="center">&nbsp;</p>
 
-### Repo One Piece
-Repo Yang Fork [Shadow](https://t.me/RhitoSakai) 
-
 
 ### STRING SESSION REPLIT
 
