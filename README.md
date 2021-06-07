@@ -1,7 +1,7 @@
 <p align="center"> 🚀 𝗪𝗵𝗶𝗰𝗵 𝗶𝘀 𝗧𝗲𝗹𝗲𝘁𝗵𝗼𝗻 𝗕𝗮𝘀𝗲𝗱  🚀</p>
 
 <p align="left">
-  <a href="https://github.com/aldoaprilyan3/One-Piece/blob/One-Piece/LICENSE"><img src="https://img.shields.io/github/license/vckyou/Geez-UserBot?&style=social&logo=github">
+  <a href="https://github.com/aldoaprilyan3/One-Piece/blob/One-Piece/LICENSE"><img src="https://img.shields.io/github/license/aldoaprilyan3/One-Piece?&style=social&logo=github">
   </a></p>
 
 ![VIEWS](https://komarev.com/ghpvc/?username=aldoaprilyan3)
