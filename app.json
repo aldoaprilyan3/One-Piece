@@ -104,7 +104,7 @@
     },
     "S_PACK_NAME": {
       "description": "Nama Sticker Pack Mu",
-      "required": true
+      "required": false
     },
     "G_BAN_LOGGER_GROUP": {
       "description": "Buatlah Sebuah Grup Private/Public Lalu Masukkan Bot Rose Lalu Ketik /id.",
