@@ -305,7 +305,7 @@ async def amireallyalive(alive):
         f"ʏᴀɴɢ ᴅɪ ɢᴜɴᴀᴋᴀɴ ᴜɴᴛᴜᴋ ᴊɪᴋᴀʟᴀᴜ ᴀɴᴅᴀ ʙᴏꜱᴀɴ"
         f"ᴅɪᴛᴇʟᴇɢʀᴀᴍ ᴠᴇʀꜱɪ ʙᴏᴛ ʏᴀɴɢ ᴅɪɢᴜɴᴀᴋᴀɴ `{BOT_VER}` "
         f"ᴊᴜᴍʟᴀʜ ᴍᴏᴅᴜʟᴇɴʏᴀ ᴛᴇʀᴅᴀᴘᴀᴛ `{len(modules)}` ᴍᴏᴅᴜʟᴇ \n\n"
-     ALIVE_LOGO:
+    if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO
             await alive.delete()
