@@ -305,16 +305,17 @@ async def amireallyalive(alive):
         f"ʏᴀɴɢ ᴅɪ ɢᴜɴᴀᴋᴀɴ ᴜɴᴛᴜᴋ ᴊɪᴋᴀʟᴀᴜ ᴀɴᴅᴀ ʙᴏꜱᴀɴ"
         f"ᴅɪᴛᴇʟᴇɢʀᴀᴍ ᴠᴇʀꜱɪ ʙᴏᴛ ʏᴀɴɢ ᴅɪɢᴜɴᴀᴋᴀɴ `{BOT_VER}` "
         f"ᴊᴜᴍʟᴀʜ ᴍᴏᴅᴜʟᴇɴʏᴀ ᴛᴇʀᴅᴀᴘᴀᴛ `{len(modules)}` ᴍᴏᴅᴜʟᴇ \n\n"
+    if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO
             await alive.delete()
             msg = await bot.send_file(alive.chat_id, logo, caption=output)
-            await asyncio.sleep(500)
+            await asyncio.sleep(200)
             await msg.delete()
         except BaseException:
             await alive.edit(
-                output + "\n\n *`Logo Yang Disediakan Tidak Valid."
-                "\nPastikan Tautan Yang Anda Gunakan Valid`"
+                output + "\n\n *`The provided logo is invalid."
+                "\nMake sure the link is directed to the logo picture`"
             )
             await asyncio.sleep(100)
             await alive.delete()
@@ -322,7 +323,6 @@ async def amireallyalive(alive):
         await alive.edit(output)
         await asyncio.sleep(100)
         await alive.delete()
-
 
 @register(outgoing=True, pattern=r"^\.aliveu")
 async def amireallyaliveuser(username):
