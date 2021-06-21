@@ -305,7 +305,6 @@ async def amireallyalive(alive):
         f"ʏᴀɴɢ ᴅɪ ɢᴜɴᴀᴋᴀɴ ᴜɴᴛᴜᴋ ᴊɪᴋᴀʟᴀᴜ ᴀɴᴅᴀ ʙᴏꜱᴀɴ"
         f"ᴅɪᴛᴇʟᴇɢʀᴀᴍ ᴠᴇʀꜱɪ ʙᴏᴛ ʏᴀɴɢ ᴅɪɢᴜɴᴀᴋᴀɴ `{BOT_VER}` "
         f"ᴊᴜᴍʟᴀʜ ᴍᴏᴅᴜʟᴇɴʏᴀ ᴛᴇʀᴅᴀᴘᴀᴛ `{len(modules)}` ᴍᴏᴅᴜʟᴇ \n\n"
-        f"♜ **[ᴏɴᴇ ᴘɪᴇᴄᴇ](https://github.com/aldoaprilyan3/One-Piece)\n♜ **[ꜱᴜᴘᴘᴏʀᴛ](t.me/xthunderlol)\n♜ [ꜱʜᴀᴅᴏᴡ](t.me/RhitoSakai)\n")
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO
