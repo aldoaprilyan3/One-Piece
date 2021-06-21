@@ -298,9 +298,9 @@ async def amireallyalive(alive):
     output = (
         f"**ᴏɴᴇ ᴘɪᴇᴄᴇ ☠️**\n**❏ ᴏᴡɴᴇʀ : [ꜱʜᴀᴅᴏᴡ](t.me/RhitoSakai)**\n**❏ ɢɪᴛʜᴜʙ : [ᴏɴᴇ ᴘɪᴇᴄᴇ](https://github.com/aldoaprilyan3/One-Piece)**\n**❏ ꜱᴜᴘᴘᴏʀᴛ: [ᴛʜᴜɴᴅᴇʀ](t.me/xthunderlol)**\n**━━━━━━━━━━━━━━━━━━━**\n"
         f" **❏ Pengguna 👥:** \n"
-        f"• ɴᴀᴍᴇ :`{DEFAULTUSER}` \n"
-        f"• ᴜꜱꜱᴇʀɴᴀᴍᴇ :`@{user.username}` \n\n"
-        f"𒄬 **━━━━━━━━━━━━━━━━━━━━** \n"
+        f"**• ɴᴀᴍᴇ :`{DEFAULTUSER}` \n**"
+        f"**• ᴜꜱꜱᴇʀɴᴀᴍᴇ :`{user.username}` \n**"
+        f"**━━━━━━━━━━━━━━━━━━━━** \n\n"
         f"➢ ᴏɴᴇ ᴘɪᴇᴄᴇ ᴀᴅᴀʟᴀʜ ᴜꜱᴇʀʙᴏᴛ ᴋʜᴜꜱᴜꜱ "
         f"ʏᴀɴɢ ᴅɪ ɢᴜɴᴀᴋᴀɴ ᴜɴᴛᴜᴋ ᴊɪᴋᴀʟᴀᴜ ᴀɴᴅᴀ ʙᴏꜱᴀɴ"
         f"ᴅɪᴛᴇʟᴇɢʀᴀᴍ ᴠᴇʀꜱɪ ʙᴏᴛ ʏᴀɴɢ ᴅɪɢᴜɴᴀᴋᴀɴ `{BOT_VER}` "
