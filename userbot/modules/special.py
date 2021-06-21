@@ -5,8 +5,6 @@
 
 import os
 
-import moviepy.editor as m
-
 from userbot import CMD_HELP
 from userbot.events import register
 
