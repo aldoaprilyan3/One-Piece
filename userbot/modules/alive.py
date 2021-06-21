@@ -291,7 +291,7 @@ async def amireallyalive(alive):
         await alive.delete()
 
 
-@register(outgoing=True, pattern=r"^\.(?:alive|on)\s?(.)?")
+@register(outgoing=True, pattern=r"^\.(?:xalive|xon)\s?(.)?")
 async def amireallyalive(alive):
     user = await bot.get_me()
     await get_readable_time((time.time() - StartTime))
@@ -304,8 +304,9 @@ async def amireallyalive(alive):
         f"➢ ᴏɴᴇ ᴘɪᴇᴄᴇ ᴀᴅᴀʟᴀʜ ᴜꜱᴇʀʙᴏᴛ ᴋʜᴜꜱᴜꜱ "
         f"ʏᴀɴɢ ᴅɪ ɢᴜɴᴀᴋᴀɴ ᴜɴᴛᴜᴋ ᴊɪᴋᴀʟᴀᴜ ᴀɴᴅᴀ ʙᴏꜱᴀɴ"
         f"ᴅɪᴛᴇʟᴇɢʀᴀᴍ ᴠᴇʀꜱɪ ʙᴏᴛ ʏᴀɴɢ ᴅɪɢᴜɴᴀᴋᴀɴ `{BOT_VER}` "
-        f"ᴊᴜᴍʟᴀʜ ᴍᴏᴅᴜʟᴇɴʏᴀ ᴛᴇʀᴅᴀᴘᴀᴛ `{len(modules)}` ᴍᴏᴅᴜʟᴇ \n\n"
-    
+        f"ᴊᴜᴍʟᴀʜ ᴍᴏᴅᴜʟᴇɴʏᴀ ᴛᴇʀᴅᴀᴘᴀᴛ `{len(modules)}` ᴍᴏᴅᴜʟᴇ ")
+    if ALIVE_LOGO:
+        try:
             logo = ALIVE_LOGO
             await alive.delete()
             msg = await bot.send_file(alive.chat_id, logo, caption=output)
@@ -322,6 +323,7 @@ async def amireallyalive(alive):
         await alive.edit(output)
         await asyncio.sleep(100)
         await alive.delete()
+
 
 @register(outgoing=True, pattern=r"^\.aliveu")
 async def amireallyaliveuser(username):
