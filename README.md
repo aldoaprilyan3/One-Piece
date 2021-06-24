@@ -35,7 +35,7 @@
 
  STRING SESSION ∆
 <p align="center">
-   <a href = "https://replit.com/@aldoaprilyan3/One-Piece-String-Session?v=1"><img src="https://64.media.tumblr.com/tumblr_m3syuelAcT1rv9xe4o1_400.gif" alt="Press to Takeoff" width="500px"></a>
+   <a href = "https://replit.com/@aldoaprilyan3/One-Piece-String-Session?v=1"><img src="https://img.shields.io/badge/run-string__session.py-blue?style=for-the-badge&logo=repl.it" alt="Press to Takeoff" width="500px"></a>
 </p>
 <br>
 
@@ -70,7 +70,7 @@ wget https://raw.githubusercontent.com/aldoaprilyan3/One-Piece/One-Piece/termina
 
 * HEROKU:
 <p align="center">
-   <a href = "https://heroku.com/deploy?template=https://github.com/aldoaprilyan3/One-Piece/tree/One-Piece"><img src="https://media1.tenor.com/images/40f0f188f6c50b5bf8eccc5e0fa3f2a2/tenor.gif?itemid=16820808" alt="Press to Takeoff" width="660"></a>
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/aldoaprilyan3/One-Piece)
 </p>
 <br>
 
