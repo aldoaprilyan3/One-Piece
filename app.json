@@ -92,7 +92,7 @@
     },
     "ALIVE_NAME": {
       "description": "Nama untuk menunjukan pesan .alive",
-      "required": false
+      "required": true
     },
     "ALIVE_LOGO": {
       "description": "Foto Untuk Alive Letakan Link Fotonya Di Bawah",
