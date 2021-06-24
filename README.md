@@ -69,10 +69,9 @@ wget https://raw.githubusercontent.com/aldoaprilyan3/One-Piece/One-Piece/termina
 ```
 
 * HEROKU:
-<p align="center">
+
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/aldoaprilyan3/One-Piece)
-</p>
-<br>
+
 
 ## © Credits 
 
