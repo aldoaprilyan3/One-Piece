@@ -134,7 +134,7 @@ async def promote(promt):
         pin_messages=True,
     )
 
-    await promt.edit("`Promosikan Pengguna Sebagai Admin... Mohon Menunggu`")
+    await promt.edit("`Menjadikan Anak Anjing Admin... Mohon Menunggu`")
     user, rank = await get_user_from_event(promt)
     if not rank:
         rank = "ㅤ"  # Just in case.
@@ -144,7 +144,7 @@ async def promote(promt):
     # Try to promote if current user is admin or creator
     try:
         await promt.client(EditAdminRequest(promt.chat_id, user.id, new_rights, rank))
-        await promt.edit("`Berhasil Mempromosikan Pengguna Ini Sebagai Admin!`")
+        await promt.edit("`Berhasil Menjadikan Anak Asu Jadi admin eheheh!`")
         await sleep(5)
         await promt.delete()
 
