@@ -137,7 +137,7 @@ async def promote(promt):
     await promt.edit("`Promosikan Pengguna Sebagai Admin... Mohon Menunggu`")
     user, rank = await get_user_from_event(promt)
     if not rank:
-        rank = "Admin"  # Just in case.
+        rank = "ㅤ"  # Just in case.
     if not user:
         return
 
@@ -175,7 +175,7 @@ async def demote(dmod):
 
     # If passing, declare that we're going to demote
     await dmod.edit("`Sedang Melepas Admin...`")
-    rank = "Admin"  # dummy rank, lol.
+    rank = "ㅤ"  # dummy rank, lol.
     user = await get_user_from_event(dmod)
     user = user[0]
     if not user:
@@ -521,7 +521,7 @@ async def rm_deletedacc(show):
     del_status = "`Tidak Menemukan Akun Terhapus, Grup Bersih`"
 
     if con != "clean":
-        await show.edit("`Mencari Akun Hantu/Terhapus/Zombie...`")
+        await show.edit("`Mencari Akun Mati Atau Akun Sudah Tidak Ada...`")
         async for user in show.client.iter_participants(show.chat_id):
 
             if user.deleted:
@@ -542,7 +542,7 @@ async def rm_deletedacc(show):
     if not admin and not creator:
         return await show.edit("`Sensei Bukan Admin Disini!`")
 
-    await show.edit("`Menghapus Akun Terhapus...\nMohon Menunggu Sensej Sedang Dalam Proses`")
+    await show.edit("`Menghapus Akun Terhapus...\nMohon Menunggu Sensei Sedang Dalam Proses`")
     del_u = 0
     del_a = 0
 
