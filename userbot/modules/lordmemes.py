@@ -2986,6 +2986,8 @@ CMD_HELP.update({
 \nusage: Memutar Bumi 🌎🌎\
 \n\n`.bombs`\
 \nUsage: Bom Telegram🤣🤣\
+\n\n`.potek`\
+\nUsage: Patah hati💔\
 \n\n`.think`\
 \nUsage: hmmm berpikir\
 \n\n`.gotm` atau `.gott`\
