@@ -49,7 +49,7 @@ async def typewriter(typew):
     await typew.edit("[TUTORIAL](https://t.me/tutorbotx)")
 
 
-@register(outgoing=True, pattern="^.sayang$")
+@register(outgoing=True, pattern="^.potek$")
 async def koc(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
         await e.edit("❤️")
