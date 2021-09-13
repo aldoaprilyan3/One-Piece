@@ -82,6 +82,16 @@ async def koc(e):
         await e.edit("💔")
 
 
+@register(outgoing=True, pattern="^.bro$")
+async def koc(e):
+    if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
+        await e.edit("**EHEHEH GUA TAU LO BOT**")
+        await e.edit("**TAPI PLISS LAH**")
+        await e.edit("**JANGAN NORAK AMAT**")
+        await e.edit("**EKEKEKEEK**")
+        await e.edit("**CANDA BABI🙏**")
+
+
 CMD_HELP.update({
     "fitur":
     "`P`\
