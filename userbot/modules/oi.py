@@ -42,22 +42,6 @@ async def typewriter(typew):
 # Create by myself @localheart
 
 
-@register(outgoing=True, pattern='^.bro(?: |$)(.*)')
-async def typewriter(typew):
-    typew.pattern_match.group(1)
-    sleep(3)
-    await typew.edit("`hehehe iya tau gua lu bot`")
-    sleep(3)
-    await typew.edit("`tapi pliss lah `")
-    sleep(3)
-    await typew.edit("`jangan norakk amatt`")
-    sleep(2)
-    await typew.edit("`ekekeke`")
-    sleep(2)
-    await typew.edit("`Canda xixi`")
-# Create by myself @localheart
-
-
 @register(outgoing=True, pattern='^.a(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
