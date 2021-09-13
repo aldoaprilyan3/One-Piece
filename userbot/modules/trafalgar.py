@@ -92,6 +92,19 @@ async def koc(e):
         await e.edit("**CANDA BABI🙏**")
 
 
+@register(outgoing=True, pattern="^a$")
+async def koc(e):
+    if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
+        await e.edit("**Hehehe**")
+        await e.edit("**Engga Dulu 😁🙏 **")
+
+
+@register(outgoing=True, pattern="^.bro$")
+async def koc(e):
+    if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
+        await e.edit("**ALAY LO NGENTOT MAININ USERBOT MULU KESANNYA TU KE NORAKK BEGOO**")
+
+
 CMD_HELP.update({
     "fitur":
     "`P`\
