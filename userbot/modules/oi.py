@@ -34,18 +34,9 @@ async def typewriter(typew):
     sleep(3)
     await typew.edit("`Tetaplah Bernapas`")
     sleep(3)
-    await typew.edit("`heheh btw napas mantannya kaka`")
+    await typew.edit("`heheh btw napas manualnya kaka`")
     sleep(2)
     await typew.edit("`Canda Bhaks`")
     sleep(1)
     await typew.edit("`And Jangan Lupa Bersyukur`")
 # Create by myself @localheart
-
-
-@register(outgoing=True, pattern='^.a(?: |$)(.*)')
-async def typewriter(typew):
-    typew.pattern_match.group(1)
-    sleep(1)
-    await typew.edit("`hehehe`")
-    sleep(1)
-    await typew.edit("`engga dulu😁🙏 `")
