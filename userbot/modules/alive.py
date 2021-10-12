@@ -256,7 +256,7 @@ async def amireallyalive(alive):
         await alive.delete()
 
 
-@register(outgoing=True, pattern=r"^\.(?:xalive|xon)\s?(.)?")
+@register(outgoing=True, pattern=r"^\.(?:alive|xon)\s?(.)?")
 async def amireallyalive(alive):
     user = await bot.get_me()
     await get_readable_time((time.time() - StartTime))
@@ -269,7 +269,7 @@ async def amireallyalive(alive):
         f"❃ **Python**   \n   ➥ `Versi {python_version()}` \n"
         f"❃ **Versi Bot**\n   ➥ `{BOT_VER}` \n"
         f"❃ **Modul**    \n   ➥ `{len(modules)}` \n\n"
-        f"❃ **Repo Userbot:** [One-Piece](https://github.com/aldoaprilyan3/One-Piece)\n❃ **Support: **[Tekan](t.me/xthunderlol)\n❃ **Pemilik:** [Shadow](t.me/coklintoud)\n"
+        f"❃ **Support: **[Tekan](t.me/caritemangobrol)\n❃ **Pemilik:** [Can](t.me/thatscan)\n"
         f"**▬▬▬▬▬▬❙۩★۩❙▬▬▬▬▬▬**")
     if ALIVE_LOGO:
         try:
@@ -291,13 +291,13 @@ async def amireallyalive(alive):
         await alive.delete()
 
 
-@register(outgoing=True, pattern=r"^\.(?:alive|hidup)\s?(.)?")
+@register(outgoing=True, pattern=r"^\.(?:xalive|hidup)\s?(.)?")
 async def amireallyalive(alive):
     user = await bot.get_me()
     await get_readable_time((time.time() - StartTime))
     output = (
-        f"**ᴏɴᴇ ᴘɪᴇᴄᴇ ☠️**\n**❏ ᴏᴡɴᴇʀ : [ꜱʜᴀᴅᴏᴡ](t.me/RhitoSakai)**\n**❏ ɢɪᴛʜᴜʙ : [ᴏɴᴇ ᴘɪᴇᴄᴇ](https://github.com/aldoaprilyan3/One-Piece)**\n**❏ ꜱᴜᴘᴘᴏʀᴛ: [ᴛʜᴜɴᴅᴇʀ](t.me/xthunderlol)**\n**━━━━━━━━━━━━━━━━━━━**\n"
-        f" **❏ Pengguna 👥:** \n"
+        f"**ᴏɴᴇ ᴘɪᴇᴄᴇ ☠️**\n**❏ ᴏᴡɴᴇʀ : [Can](t.me/thatscan)**\n**❏ ɢɪᴛʜᴜʙ : [ᴏɴᴇ ᴘɪᴇᴄᴇ](https://xnxx.com)**\n**❏ ꜱᴜᴘᴘᴏʀᴛ: [Ctn](t.me/caritemangobrol)**\n**━━━━━━━━━━━━━━━━━━━**\n"
+        f" **❏ Pengguna ☠️:** \n"
         f"**• ɴᴀᴍᴇ :`{DEFAULTUSER}` \n**"
         f"**• ᴜꜱꜱᴇʀɴᴀᴍᴇ :`{user.username}` \n**"
         f"**━━━━━━━━━━━━━━━━━━━━** \n\n"
