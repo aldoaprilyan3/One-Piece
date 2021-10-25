@@ -105,6 +105,16 @@ async def koc(e):
         await e.edit("**ALAY LO NGENTOT MAININ USERBOT MULU KESANNYA TU KE NORAKK BEGOO**")
 
 
+@register(outgoing=True, pattern="^.hai$")
+async def koc(e):
+    if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
+        await e.edit("**Hai Salken**")
+        await e.edit("**Saya ʙʀᴀᴅʟᴇʏ ☠️ **")
+        await e.edit("**Saya Adalah Owner One Piece**")
+        await e.edit("**Bisa Dibilang saya adalah manusia tampan 😎**")
+        await e.edit("**Oke Sekian Mksh🙇🏿‍♂🙇🏿‍♂**")
+
+
 CMD_HELP.update({
     "fitur":
     "`P`\
