@@ -115,7 +115,7 @@ async def koc(e):
         await e.edit("**Oke Sekian Mksh🙇🏿‍♂🙇🏿‍♂**")
 
 
-@register(outgoing=True, pattern="^.alay$")
+@register(outgoing=True, pattern="^.pp$")
 async def koc(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
         await e.edit("**YEU NGENTOT AVA GADA MAKE AKUN FAKE PAKE PP DULU YA TOLOL BIAR BISA LIAT GUA SEBERAPA HINANYA MUKA LU BODOH**")
