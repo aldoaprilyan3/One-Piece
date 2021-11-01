@@ -117,11 +117,11 @@ async def typewriter(typew):
 @register(outgoing=True, pattern='^.awkwok(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    await typew.edit("────██──────▀▀▀██\n"
-                     "──▄▀█▄▄▄─────▄▀█▄▄▄\n"
-                     "▄▀──█▄▄──────█─█▄▄\n"
-                     "─▄▄▄▀──▀▄───▄▄▄▀──▀▄\n"
-                     "─▀───────▀▀─▀───────▀▀\n`**AWKWOKWOKWOK BERLARI DARI ANAK NGENTOT**`")
+    await typew.edit("**────██──────▀▀▀██\n**"
+                     "**──▄▀█▄▄▄─────▄▀█▄▄▄\n**"
+                     "**▄▀──█▄▄──────█─█▄▄\n**"
+                     "**─▄▄▄▀──▀▄───▄▄▄▀──▀▄\n**"
+                     "**─▀───────▀▀─▀───────▀▀\n`AWKWOKWOKWOK BERLARI DARI ANAK NGENTOT`**")
 
 
 @register(outgoing=True, pattern='^.ular(?: |$)(.*)')
