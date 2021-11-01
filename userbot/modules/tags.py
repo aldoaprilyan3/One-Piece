@@ -1,18 +1,26 @@
+# Port By @VckyouuBitch From Geez - Project
+# Copyright © Geez - Project
+# Credits By Ultroid
+
 from telethon.tl.types import ChannelParticipantAdmin as admin
 from telethon.tl.types import ChannelParticipantCreator as owner
 from telethon.tl.types import UserStatusOffline as off
 from telethon.tl.types import UserStatusOnline as onn
 from telethon.tl.types import UserStatusRecently as rec
 from telethon.utils import get_display_name
-from userbot import CMD_HELP
+
 from userbot.events import register
+from userbot import CMD_HELP
 
 
-@register(outgoing=True,
-          pattern=r"^.tags(?: |$)(on|off|all|bots|rec|admins|owner)?")
-async def _(event):
-    okk = event.text
-    lll = event.pattern_match.group(2)
+@register(
+    outgoing=True,
+    pattern=r"^\.tag(on|off|all|bots|rec|adm|own)?(.*)",
+    disable_errors=True,
+)
+async def _(e):
+    okk = e.text
+    lll = e.pattern_match.group(2)
     users = 0
     o = 0
     nn = 0
@@ -21,7 +29,7 @@ async def _(event):
         xx = f"{lll}"
     else:
         xx = ""
-    async for bb in event.client.iter_participants(event.chat_id, 99):
+    async for bb in e.client.iter_participants(e.chat_id, 99):
         users = users + 1
         x = bb.status
         y = bb.participant
@@ -41,7 +49,7 @@ async def _(event):
                     xx += f"\n[{get_display_name(bb)}](tg://user?id={bb.id})"
         if isinstance(y, owner):
             if "admin" or "owner" in okk:
-                xx += f"\n꧁[{get_display_name(bb)}](tg://user?id={bb.id})꧂"
+                xx += f"\n👑 [{get_display_name(bb)}](tg://user?id={bb.id}) 👑"
         if isinstance(y, admin):
             if "admin" in okk:
                 if not bb.deleted:
@@ -52,24 +60,24 @@ async def _(event):
         if "bot" in okk:
             if bb.bot:
                 xx += f"\n[{get_display_name(bb)}](tg://user?id={bb.id})"
-    await event.client.send_message(e.chat_id, xx)
-    await event.delete()
+    await e.client.send_message(e.chat_id, xx)
+    await e.delete()
 
 
 CMD_HELP.update({
     'tags':
-    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.tags all`"
-    "\n• : Tag 100 Anggota Yang Sering Nimbrung."
-    "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.tags admin`"
-    "\n• : Tag Admins Group."
-    "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.tags owner`"
-    "\n• : Tag Owner Group."
-    "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.tags bot`"
-    "\n• : Tag Bots Group."
-    "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.tags rec`"
-    "\n• :Tag Anggota Yang Baru-Baru Aktif."
-    "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.tags on`"
-    "\n• : Tag online Members(bekerja hanya jika privasi tidak aktif)."
-    "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.tags off`"
-    "\n• : Tag Offline Members(bekerja hanya jika privasi tidak aktif)."
+    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.tag all`"
+    "\n• : Tag 100 member di Grup."
+    "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.tag admin`"
+    "\n• : Tag Admins di grup."
+    "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.tag own`"
+    "\n• : Tag Owner Di grup"
+    "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.tag bot`"
+    "\n• : Tag Bots Di Grup."
+    "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.tag rec`"
+    "\n• : Tag member baru off di grup."
+    "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.tag on`"
+    "\n• : Tag online Members(work only if privacy off)."
+    "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.tag off`"
+    "\n• : Tag Offline Members(work only if privacy off)."
 })
