@@ -28,6 +28,6 @@ CMD_HELP.update({
     "marine":
     "`.marine`\
 \nUsage: Bantuan Untuk One Piece.\
-\n`.yonkou`\
+\n`.linkdeploy`\
 \nUsage: Cara Langsung Mendeploy Ke Heroku Tanpa Harus Ke  github."
 })
