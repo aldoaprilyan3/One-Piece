@@ -127,6 +127,12 @@ async def typewriter(typew):
     await typew.edit("[INSTAGRAM](instagram.com/axqrptan)")
 
 
+@register(outgoing=True, pattern="^.o$")
+async def koc(e):
+    if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
+        await e.edit("**LAH NGATUR KONTOL SUKA SUKA GUA DONG EMANG LO SIAPA ANJING NGATUR² GUA.**")
+
+
 
 CMD_HELP.update({
     "fitur":
