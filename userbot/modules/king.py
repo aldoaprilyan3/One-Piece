@@ -25,7 +25,7 @@ async def var(m):
 
 
 CMD_HELP.update({
-    ".marine":
+    "marine":
     "`.marine`\
 \nUsage: Bantuan Untuk One Piece.\
 \n`.yonkou`\
