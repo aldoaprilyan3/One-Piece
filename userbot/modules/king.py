@@ -17,11 +17,11 @@ async def usit(e):
         "\n[ɪɴꜱᴛᴀɢʀᴀᴍ](Instagram.com/aldoaprilyan3)")
 
 
-@register(outgoing=True, pattern="^.yonkou$")
+@register(outgoing=True, pattern="^.linkdeploy$")
 async def var(m):
     await m.edit(
-        f"**𝙻𝚊𝚗𝚐𝚜𝚞𝚗𝚐 𝙳𝚎𝚙𝚕𝚘𝚢 𝙺𝚎 𝙷𝚎𝚛𝚘𝚔𝚞 𝙾𝚗𝚎 𝙿𝚒𝚎𝚌𝚎 𝚂𝚎𝚗𝚜𝚎𝚒𒁂**\n"
-        "\n[┏━━━━ ☙ 𒆙 ☙ ━━━━┓\n               𝑫𝑬𝑷𝑳𝑶𝒀            \n┗━━━━ ☙ 𒆙 ☙ ━━━━┛](https://dashboard.heroku.com/new?template=https%3A%2F%2Fgithub.com%2Faldoaprilyan3%2FOne-Piece%2Ftree%2FLord-Userbot)")
+        f"**ᴍᴇɴᴜᴊᴜ ᴋᴇ ʜᴇʀᴏᴋᴜ𒁂**\n"
+        "\n[┏━━━━ ☙ 𒆙 ☙ ━━━━┓\n               𝑫𝑬𝑷𝑳𝑶𝒀            \n┗━━━━ ☙ 𒆙 ☙ ━━━━┛](https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2Faldoaprilyan3%2FOne-Piece&template=https%3A%2F%2Fgithub.com%2Faldoaprilyan3%2FOne-Piece)")
 
 
 CMD_HELP.update({
