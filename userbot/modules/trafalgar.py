@@ -121,6 +121,11 @@ async def koc(e):
         await e.edit("**YEU NGENTOT AVA GADA MAKE AKUN FAKE PAKE PP DULU YA TOLOL BIAR BISA LIAT GUA SEBERAPA HINANYA MUKA LU BODOH**")
 
 
+@register(outgoing=True, pattern='^.axel(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    await typew.edit("[INSTAGRAM](instagram.com/axqrptan)")
+
 
 CMD_HELP.update({
     "fitur":
