@@ -127,6 +127,7 @@ async def typewriter(typew):
     await typew.edit("[INSTAGRAM](instagram.com/axqrptan)")
 
 
+
 CMD_HELP.update({
     "fitur":
     "`P`\
