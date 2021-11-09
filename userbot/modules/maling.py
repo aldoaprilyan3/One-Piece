@@ -499,3 +499,4 @@ CMD_HELP.update(
         \n  •  **Function : **Balas ke sticker atau gambar .itos untuk mengambil sticker bukan ke pack\
     "
     }
+)
