@@ -320,8 +320,8 @@ async def get_pack_info(event):
     await event.edit(OUTPUT)
 
 
-@register(outgoing=True, pattern=r"delsticker ?(.*)"))
-async def _(event):
+@register(outgoing=True, pattern=r"^\.delsticker$")
+async def get_pack_info(event):
     if event.fwd_from:
         return
     if not event.reply_to_msg_id:
@@ -364,8 +364,8 @@ async def _(event):
             await event.edit("**Berhasil Menghapus Stiker.**")
 
 
-@register(outgoing=True, pattern=r"editsticker ?(.*)"))
-async def _(event):
+@register(outgoing=True, pattern=r"^\.editsticker$")
+async def get_pack_info(event):
     if event.fwd_from:
         return
     if not event.reply_to_msg_id:
@@ -411,7 +411,7 @@ async def _(event):
                 )
 
 
-@register(outgoing=True, pattern=r"getsticker$"))
+@register(outgoing=True, pattern=r"^\.getsticker$")
 async def sticker_to_png(sticker):
     if not sticker.is_reply:
         await sticker.edit("`NULL information to fetch...`")
