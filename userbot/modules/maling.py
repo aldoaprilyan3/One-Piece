@@ -27,7 +27,6 @@ from telethon.tl.types import (
 from userbot import CMD_HELP
 from userbot import S_PACK_NAME as custompack
 from userbot import bot
-from userbot.events import man_cmd
 from userbot.utils import edit_or_reply
 
 KANGING_STR = [
