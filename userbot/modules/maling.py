@@ -441,8 +441,8 @@ async def sticker_to_png(sticker):
     return
 
 
-@register(outgoing=True, pattern=r"stickers ?([\s\S]*)"))
-async def cb_sticker(event):
+@register(outgoing=True, pattern="^.stickers$")
+async def _(event):
     query = event.pattern_match.group(1)
     if not query:
         return await event.edit("**Masukan Nama Sticker Pack!**")
