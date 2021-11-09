@@ -37,7 +37,7 @@ KANGING_STR = [
 ]
 
 
-@bot.on(man_cmd(outgoing=True, pattern=r"(?:tikel|kang)\s?(.)?"))
+@register(outgoing=True, pattern=r"^\.(?:tikel|kang)\s?(.)?")
 async def kang(args):
     user = await bot.get_me()
     if not user.username:
@@ -278,7 +278,7 @@ async def resize_photo(photo):
     return image
 
 
-@bot.on(man_cmd(outgoing=True, pattern=r"stickerinfo$"))
+@register(outgoing=True, pattern=r"^\.stkrinfo$")
 async def get_pack_info(event):
     if not event.is_reply:
         return await event.edit("**Mohon Balas Ke Sticker**")
@@ -320,7 +320,7 @@ async def get_pack_info(event):
     await event.edit(OUTPUT)
 
 
-@bot.on(man_cmd(outgoing=True, pattern=r"delsticker ?(.*)"))
+@register(outgoing=True, pattern=r"delsticker ?(.*)"))
 async def _(event):
     if event.fwd_from:
         return
@@ -364,7 +364,7 @@ async def _(event):
             await event.edit("**Berhasil Menghapus Stiker.**")
 
 
-@bot.on(man_cmd(outgoing=True, pattern=r"editsticker ?(.*)"))
+@register(outgoing=True, pattern=r"editsticker ?(.*)"))
 async def _(event):
     if event.fwd_from:
         return
@@ -411,7 +411,7 @@ async def _(event):
                 )
 
 
-@bot.on(man_cmd(outgoing=True, pattern=r"getsticker$"))
+@register(outgoing=True, pattern=r"getsticker$"))
 async def sticker_to_png(sticker):
     if not sticker.is_reply:
         await sticker.edit("`NULL information to fetch...`")
@@ -441,7 +441,7 @@ async def sticker_to_png(sticker):
     return
 
 
-@bot.on(man_cmd(outgoing=True, pattern=r"stickers ?([\s\S]*)"))
+@register(outgoing=True, pattern=r"stickers ?([\s\S]*)"))
 async def cb_sticker(event):
     query = event.pattern_match.group(1)
     if not query:
