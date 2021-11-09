@@ -24,7 +24,6 @@ from telethon.tl.types import (
     MessageMediaPhoto,
 )
 
-from userbot import CMD_HANDLER as cmd
 from userbot import CMD_HELP
 from userbot import S_PACK_NAME as custompack
 from userbot import bot
