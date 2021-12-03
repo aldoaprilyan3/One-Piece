@@ -7,33 +7,52 @@
 """ Userbot initialization. """
 
 import os
-import time
 import re
-
-from sys import version_info
-from logging import basicConfig, getLogger, INFO, DEBUG
+import sys
+import time
 from distutils.util import strtobool as sb
+from logging import DEBUG, INFO, basicConfig, getLogger
 from math import ceil
+from pathlib import Path
+from sys import version_info
 
+from dotenv import load_dotenv
 from pylast import LastFMNetwork, md5
 from pySmartDL import SmartDL
-from pymongo import MongoClient
-from redis import StrictRedis
-from dotenv import load_dotenv
+from pytgcalls import PyTgCalls
 from requests import get
-from telethon.sync import TelegramClient, custom, events
+from telethon.errors import UserIsBlockedError
+from telethon.network.connection.tcpabridged import ConnectionTcpAbridged
 from telethon.sessions import StringSession
+from telethon.sync import TelegramClient, custom, events
+from telethon.tl.types import InputWebDocument
+from telethon.utils import get_display_name
+
+from .storage import Storage
+
+
+def STORAGE(n):
+    return Storage(Path("data") / n)
+
 
 load_dotenv("config.env")
 
-
 StartTime = time.time()
 
-CMD_LIST = {}
-# for later purposes
+# Global Variables
+COUNT_MSG = 0
+USERS = {}
+COUNT_PM = {}
+LASTMSG = {}
 CMD_HELP = {}
-INT_PLUG = ""
+CMD_LIST = {}
+SUDO_LIST = {}
+ZALG_LIST = {}
 LOAD_PLUG = {}
+INT_PLUG = ""
+ISAFK = False
+AFKREASON = None
+ENABLE_KILLME = True
 
 # Bot Logs setup:
 CONSOLE_LOGGER_VERBOSE = sb(os.environ.get("CONSOLE_LOGGER_VERBOSE", "False"))
