@@ -22,10 +22,10 @@
 <p align="left">
 </p>
 <a href="https://t.me/xthunderlol"><img src="https://img.shields.io/badge/%20Support-blue.svg?style=for-the-badge&logo=Telegram"></a>
-<a href="https://t.me/RhitoSakai"><img src="https://img.shields.io/badge/%20Creator-blue.svg?style=for-the-badge&logo=Telegram"></a>
+<a href="https://t.me/min4meee"><img src="https://img.shields.io/badge/%20Creator-blue.svg?style=for-the-badge&logo=Telegram"></a>
 
-# ONE PIECE
-<a href="https://cooltext.com"><img src="https://pa1.narvii.com/6556/bfc4a134746479ca5e3a2e1d9411d45c09ab498e_hq.gif" width="800" height="500" alt="ONE PIECE" /></a>
+# Yanzzx Userbot
+<a href="https://cooltext.com"><img src="https://telegra.ph/file/f19d3f896795b4e6fa4ab.jpg" width="800" height="500" alt="YANZZX USERBOT" /></a>
 
 <h3 align="center">Userbot Yang Digunakan Untuk Bersenang-Senang Di Telegram</h3>
 <p align="center">&nbsp;</p>
@@ -35,13 +35,13 @@
 
  STRING SESSION ∆
 <p align="center">
-   <a href = "https://replit.com/@aldoaprilyan3/One-Piece-String-Session?v=1"><img src="https://img.shields.io/badge/run-string__session.py-blue?style=for-the-badge&logo=repl.it" alt="Press to Takeoff" width="500px"></a>
+   <a href = "https://replit.com/@min4meee/yanzzx-String-Session?v=1"><img src="https://img.shields.io/badge/run-string__session.py-blue?style=for-the-badge&logo=repl.it" alt="Press to Takeoff" width="500px"></a>
 </p>
 <br>
 
 ### or Run you termux
 ```
-wget https://raw.githubusercontent.com/aldoaprilyan3/One-Piece/One-Piece/terminal_getstring.sh && bash terminal_getstring.sh
+wget https://raw.githubusercontent.com/destraadryann/yanzzx-userbot/yanzzx-userbot/terminal_getstring.sh && bash terminal_getstring.sh
 ```
 
 
