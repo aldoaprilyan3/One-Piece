@@ -34,7 +34,7 @@ async def typewriter(typew):
 @register(outgoing=True, pattern='^.ig(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    await typew.edit("[ɪɴꜱᴛᴀɢʀᴀᴍ](instagram.com/aldoaprilyan3)")
+    await typew.edit("[ɪɴꜱᴛᴀɢʀᴀᴍ](instagram.com/bxbsakai3)")
 
 
 @register(outgoing=True, pattern='^.ian(?: |$)(.*)')
